@@ -16,7 +16,7 @@ Java v1.8.x
 Install Java
 We will be using open java for our demo, Get latest version from http://openjdk.java.net/install/. Also configure the default JAVA_HOME path
 
-yum install java-1.8*
+apt install java-1.8*
 #yum -y install java-1.8.0-openjdk
 Setup Jenkins Slave
 # Create user and add the user to wheel group
@@ -40,35 +40,3 @@ chmod 700 known_hosts
 Configure the Slave using Manage Jenkins
 Configure the node as shown here Manage Jenkins > Manage Nodes > New Node Jenkins Master and Slave Configuration
 
-Test Jenkins Jobs
-Create “new item”
-Enter an item name – My-First-Project
-Chose Freestyle project
-Under General Section
-Choose Restrict where this project can be run
-Update your jenkins slave label Java
-Under Build section Execute shell
-#!/bin/bash
-echo "_______________________________"
-echo "|                             |"
-echo "|   Welcome to Valaxy Demo    |"
-echo "|           _nnnn_            |"
-echo "|          dGGGGMMb           |"
-echo "|         @p~qp~~qMb          |"
-echo "|         M|@||@) M|          |"
-echo "|         @,----.JM|          |"
-echo "|        JS^\__/  qKL         |"
-echo "|       dZP        qKRb       |"
-echo "|      dZP          qKKb      |"
-echo "|     fZP            SMMb     |"
-echo "|     HZM            MMMM     |"
-echo "|     FqM            MMMM     |"
-echo "|   __| '.        |\dS'qML    |"
-echo "|   |    '.       | ' \Zq     |"
-echo "|  _)      \.___.,|     .'    |"
-echo "|  \____   )MMMMMP|   .'      |"
-echo "|       '-'       '--' hjm    |"
-echo "_______________________________"
-Save your job
-Build job
-Check "console output"
